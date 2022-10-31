@@ -13,23 +13,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            elevation: 0, // 그림자 없애기
-            backgroundColor: Colors.white, // 배경 색상
-            centerTitle: false, // title 중앙 정렬
-            iconTheme: IconThemeData(color: Colors.black), // app bar icon color
+            elevation: 0,
+            centerTitle: false,
+            iconTheme: IconThemeData(color: Colors.black), 
+            backgroundColor: Colors.white,
             title: Text(
               "Food Recipe",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
+                fontSize: 30,
+                fontWeight: FontWeight.w900,
               ),
             ),
             actions: [
               IconButton(
-                onPressed: () {
-                  print("go my page");
-                },
+                onPressed: () {},
                 icon: Icon(
                   Icons.person_outline,
                 ),
@@ -38,29 +36,29 @@ class MyApp extends StatelessWidget {
           ),
           body: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(16.0),
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(8.0),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "상품을 검색해주세요.",
                         border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black),
                         ),
-                        // 돋보기 아이콘
                         suffixIcon: IconButton(
                           icon: Icon(Icons.search),
-                          onPressed: () {
-                            print("돋보기 아이콘 클릭");
-                          },
+                          onPressed: () {},
                         ),
                       ),
                     ),
                   ),
                   Divider(
                     height: 1,
+                  ),
+                  Container(
+                    child: ,
                   )
                 ],
               ),
